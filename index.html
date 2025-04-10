@@ -1,35 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using @vitejs/plugin-react"
-    />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="/manifest.json" />
-    <title>React App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="parallax-container">
+      <!-- Header with parallax hero section -->
+      <header class="parallax-section" data-speed="0.5">
+        <div class="header-content">
+          <h1>John Doe</h1>
+          <h2>Software Engineer</h2>
+          <div class="social-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
+        </div>
+        <div class="header-bg"></div>
+      </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <!-- About section -->
+      <section id="about" class="content-section parallax-section" data-speed="0.3">
+        <div class="section-content">
+          <h2 class="section-title">About Me</h2>
+          <p>I'm a passionate software engineer with expertise in building scalable web applications. With over 5 years of experience in frontend and backend development, I create elegant solutions to complex problems.</p>
+          <div class="profile-image-container">
+            <div class="profile-image"></div>
+          </div>
+        </div>
+        <div class="section-bg"></div>
+      </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <!-- Experience section -->
+      <section id="experience" class="content-section parallax-section" data-speed="0.2">
+        <div class="section-content">
+          <h2 class="section-title">Work Experience</h2>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Senior Software Engineer</h3>
+                <h4>Tech Solutions Inc. | 2020 - Present</h4>
+                <p>Led development of cloud-based applications with React and Node.js. Improved system performance by 40% through architecture optimization.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Software Developer</h3>
+                <h4>Digital Innovations | 2018 - 2020</h4>
+                <p>Developed responsive web applications and collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Junior Developer</h3>
+                <h4>WebTech Studios | 2016 - 2018</h4>
+                <p>Assisted in frontend development using HTML, CSS, and JavaScript. Participated in code reviews and agile development processes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-bg"></div>
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills" class="content-section parallax-section" data-speed="0.15">
+        <div class="section-content">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li class="skill-item">React</li>
+                <li class="skill-item">Vue.js</li>
+                <li class="skill-item">JavaScript/TypeScript</li>
+                <li class="skill-item">HTML5 & CSS3</li>
+                <li class="skill-item">Responsive Design</li>
+              </ul>
+            </div>
+            
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <ul class="skill-list">
+                <li class="skill-item">Node.js</li>
+                <li class="skill-item">Express</li>
+                <li class="skill-item">Python</li>
+                <li class="skill-item">RESTful APIs</li>
+                <li class="skill-item">GraphQL</li>
+              </ul>
+            </div>
+            
+            <div class="skill-category">
+              <h3>Other</h3>
+              <ul class="skill-list">
+                <li class="skill-item">Git & GitHub</li>
+                <li class="skill-item">Docker</li>
+                <li class="skill-item">AWS</li>
+                <li class="skill-item">CI/CD</li>
+                <li class="skill-item">Agile Methodologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section-bg"></div>
+      </section>
+
+      <!-- Education section -->
+      <section id="education" class="content-section parallax-section" data-speed="0.1">
+        <div class="section-content">
+          <h2 class="section-title">Education</h2>
+          <div class="education-item">
+            <h3>Master of Computer Science</h3>
+            <h4>University of Technology | 2014 - 2016</h4>
+            <p>Specialized in Software Engineering with focus on distributed systems and cloud computing.</p>
+          </div>
+          
+          <div class="education-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <h4>State University | 2010 - 2014</h4>
+            <p>Graduated with honors. Coursework included algorithms, data structures, and software development.</p>
+          </div>
+        </div>
+        <div class="section-bg"></div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="content-section parallax-section" data-speed="0.05">
+        <div class="section-content">
+          <h2 class="section-title">Contact Me</h2>
+          <p>Interested in working together? Feel free to reach out!</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-label">Email:</span>
+              <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone:</span>
+              <a href="tel:+1234567890">(123) 456-7890</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location:</span>
+              <span>San Francisco, CA</span>
+            </div>
+          </div>
+        </div>
+        <div class="section-bg"></div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2023 John Doe. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
   </body>
-  <script type="module" src="/src/index.jsx"></script>
 </html>
